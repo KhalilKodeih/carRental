@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/carrental/static/css/main.ea4a5049.css",
-    "main.js": "/carrental/static/js/main.8124960f.js",
-    "index.html": "/carrental/index.html",
-    "main.ea4a5049.css.map": "/carrental/static/css/main.ea4a5049.css.map",
-    "main.8124960f.js.map": "/carrental/static/js/main.8124960f.js.map"
+    "main.css": "/carRental/static/css/main.ea4a5049.css",
+    "main.js": "/carRental/static/js/main.8124960f.js",
+    "index.html": "/carRental/index.html",
+    "main.ea4a5049.css.map": "/carRental/static/css/main.ea4a5049.css.map",
+    "main.8124960f.js.map": "/carRental/static/js/main.8124960f.js.map"
   },
   "entrypoints": [
     "static/css/main.ea4a5049.css",
