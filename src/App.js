@@ -10,6 +10,8 @@ import Services from "./pages/services";
 import Cars from "./pages/carListing";
 import CarDetails from "./pages/carDetails";
 import Contact from "./pages/contact";
+import Login from "./pages/login";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
         <Route path="/cars" element={<Cars />} />
         <Route path="/cars/:id" element={<CarDetails />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+
       </Routes>
 
       <Footer />
