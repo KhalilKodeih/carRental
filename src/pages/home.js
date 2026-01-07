@@ -18,9 +18,6 @@ function Home() {
             Browse Cars
           </Link>
         </div>
-        <div className="home__hero-image">
-          {/* Put hero image or illustration here via CSS background or img */}
-        </div>
       </div>
 
       <div className="home__section">
@@ -36,3 +33,5 @@ function Home() {
 }
 
 export default Home;
+
+<input type="date" />;

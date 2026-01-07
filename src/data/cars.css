@@ -1,0 +1,165 @@
+/* ===========================
+   Cars list / cards
+   =========================== */
+
+.cl-cars-section {
+  padding: 3.5rem 0;
+  background: #ffffff;
+}
+
+.cl-cars-section-header {
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.cl-cars-section-header h2 {
+  margin: 0 0 0.5rem;
+}
+
+.cl-cars-section-header p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* Grid of cars */
+.cl-cars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.8rem;
+}
+
+/* Car card */
+.cl-car-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  transition: transform var(--transition-fast),
+    box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.cl-car-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.12);
+  border-color: rgba(11, 31, 59, 0.2);
+}
+
+/* Top image area – placeholder style for now */
+.cl-car-image {
+  position: relative;
+  height: 180px;
+  background: linear-gradient(
+      135deg,
+      rgba(11, 31, 59, 0.45),
+      rgba(11, 31, 59, 0.8)
+    ),
+    url("https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=1600")
+      center/cover no-repeat;
+}
+
+.cl-car-badge {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--navy);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Card body */
+
+.cl-car-body {
+  padding: 1.3rem 1.4rem 1.1rem;
+  flex: 1;
+}
+
+.cl-car-name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.cl-car-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.cl-car-year {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.cl-car-description {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.9rem;
+}
+
+/* Specs row */
+
+.cl-car-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.cl-car-pill {
+  font-size: 0.78rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: var(--bg-light);
+  color: #42516b;
+}
+
+/* Footer */
+
+.cl-car-footer {
+  padding: 0 1.4rem 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+}
+
+.cl-car-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.cl-car-price span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-left: 4px;
+}
+
+/* Reuse primary button style for "Rent now" */
+.cl-car-footer .cl-btn {
+  padding: 0.45rem 1.2rem;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .cl-cars-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .cl-cars-grid {
+    grid-template-columns: 1fr;
+  }
+}

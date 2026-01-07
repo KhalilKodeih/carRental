@@ -1,0 +1,65 @@
+/* Booking form wrapper */
+.booking-form {
+  max-width: 420px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem 1.6rem;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dde3f0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Title */
+.booking-form h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: #0b1f3b; /* navy */
+}
+
+/* Inputs */
+.booking-form input {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #dde3f0;
+  font-size: 0.9rem;
+}
+
+.booking-form input:focus {
+  outline: none;
+  border-color: #0b1f3b;
+}
+
+/* Labels + row for dates */
+.booking-form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  color: #7585a2;
+}
+
+.booking-form__row {
+  display: flex;
+  gap: 1rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.booking-form__row > div {
+  flex: 1;
+}
+
+/* Button – we already have .btn, this just makes primary version */
+.btn-primary {
+  background: #ff4b4b;
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(255, 75, 75, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(255, 75, 75, 0.45);
+}

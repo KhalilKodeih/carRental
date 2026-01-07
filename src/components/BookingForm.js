@@ -1,5 +1,6 @@
 // src/components/BookingForm.js
 import { useState } from "react";
+import "./bookingForm.css";
 
 function BookingForm({ carName }) {
   const [form, setForm] = useState({

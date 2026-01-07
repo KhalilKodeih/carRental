@@ -1,0 +1,33 @@
+/* Filters bar */
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #ffffff;
+  border: 1px solid #dde3f0;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+
+.filters label {
+  font-size: 0.9rem;
+  color: #0b1f3b;
+  font-weight: 600;
+}
+
+.filters select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #dde3f0;
+  font-size: 0.9rem;
+  background: #fff;
+  color: #0b1f3b;
+  outline: none;
+}
+
+.filters select:focus {
+  border-color: #0b1f3b;
+}
